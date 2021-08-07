@@ -10,7 +10,8 @@ import {GoogleLogin} from 'react-google-login';
 var FontAwesome = require('react-fontawesome');
 
 
-const client_id = '583451575044-i4kah52p22nlhsv1e6nstfknr1sa1qod.apps.googleusercontent.com';
+// const client_id = '583451575044-i4kah52p22nlhsv1e6nstfknr1sa1qod.apps.googleusercontent.com';
+const client_id = '210191010491-arcear3sgs4vbght2tke3ut0bo89566n.apps.googleusercontent.com';
 
 function Login(){
 
