@@ -1,6 +1,6 @@
 export default class API {
     static loginUser(body) {
-        return fetch(`https://api.sochem.org/api/auth/`, {
+        return fetch(`${process.env.REACT_APP_API_URL}/api/auth/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -10,7 +10,7 @@ export default class API {
     }
 
     static registerUser(body) {
-        return fetch(`https://api.sochem.org/api/users/`, {
+        return fetch(`${process.env.REACT_APP_API_URL}/api/users/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ export default class API {
     }
 
     static getEvents(token) {
-        return fetch(`https://api.sochem.org/api/events/`, {
+        return fetch(`${process.env.REACT_APP_API_URL}/api/events/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export default class API {
     }
 
     static newComment(body, token){
-        return fetch('https://api.sochem.org/api/forum-comment/', {
+        return fetch(`${process.env.REACT_APP_API_URL}/api/forum-comment/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ export default class API {
             }).then( resp => resp.json())
     }
     static getEvents(token) {
-        return fetch(`https://api.sochem.org/api/events/`, {
+        return fetch(`${process.env.REACT_APP_API_URL}/api/events/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

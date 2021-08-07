@@ -10,7 +10,7 @@ function AllForumPosts(props){
 
     const [userDetails, setUserDetails] = useState(null);
      useEffect(() => {
-        fetch(`https://api.sochem.org/api/user-extension?id=${props.post.author}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/user-extension?id=${props.post.author}`, {
             method: 'GET',
             headers: {
               'Authorization': `Token ${props.token['mr-token']}`

@@ -13,7 +13,7 @@ function People(){
     const [token, setToken] = useCookies();
     const [showDetails, setShowDetails] = useState(null);
     useEffect(() => {
-        fetch(`https://api.sochem.org/api/family`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/family`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ function Forum(){
     const [showNewPost, setShowNewPost] = useState(false);
      useEffect(()=>{
          
-        fetch('https://api.sochem.org/api/forum-post/', {
+        fetch(`${process.env.REACT_APP_API_URL}/api/forum-post/`, {
             method: 'GET',
             headers: {
               'Authorization': `Token ${token['mr-token']}`
@@ -29,7 +29,7 @@ function Forum(){
             })
           .catch( error => console.log(error));
 
-          fetch('https://api.sochem.org/api/user-from-token/', {
+          fetch(`${process.env.REACT_APP_API_URL}/api/user-from-token/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

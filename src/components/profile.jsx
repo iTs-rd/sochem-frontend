@@ -22,7 +22,7 @@ function Profile(){
     const [commentCount, setCommentCount] = useState(0);
     const [editBioBool, setEditBioBool] = useState(false);
     useEffect(()=>{
-        fetch('https://api.sochem.org/api/user-from-token/', {
+        fetch(`${process.env.REACT_APP_API_URL}/api/user-from-token/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ function Profile(){
 
     const getUserDetail = () =>{
         if(userDetail==null && user){
-            fetch(`https://api.sochem.org/api/user-extension?id=${user.id}`, {
+            fetch(`${process.env.REACT_APP_API_URL}/api/user-extension?id=${user.id}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function Profile(){
     const getAllForum = () =>{
         if(user && (gotAllForm == false)){
             gotAllForm = true;
-            fetch(`https://api.sochem.org/api/forum-post?id=${user.id}`, {
+            fetch(`${process.env.REACT_APP_API_URL}/api/forum-post?id=${user.id}`, {
                 method: 'GET',
                 headers: {
                   'Authorization': `Token ${token['mr-token']}`
@@ -71,7 +71,7 @@ function Profile(){
     const getCommentCount = () =>{
         if(user && (gotCommentCount==false)){
             gotCommentCount = true;
-            fetch(`https://api.sochem.org/api/total-comments?user_id=${user.id}`, {
+            fetch(`${process.env.REACT_APP_API_URL}/api/total-comments?user_id=${user.id}`, {
                 method: 'GET',
                 headers: {
                   'Authorization': `Token ${token['mr-token']}`
@@ -84,7 +84,7 @@ function Profile(){
     const getAllComment = () =>{
         if(user && (gotAllComment==false)){
             gotAllComment = true;
-            fetch(`https://api.sochem.org/api/forum-comment?user_id=${user.id}`, {
+            fetch(`${process.env.REACT_APP_API_URL}/api/forum-comment?user_id=${user.id}`, {
                 method: 'GET',
                 headers: {
                   'Authorization': `Token ${token['mr-token']}`

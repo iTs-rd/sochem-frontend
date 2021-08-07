@@ -13,7 +13,7 @@ function PeopleBlock(props){
     const [userDetails, setUserDetails] = useState({});
     useEffect(() => {
 
-        fetch(`https://api.sochem.org/api/users/${props.user_id}/`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/users/${props.user_id}/`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ function PeopleBlock(props){
             }).then( resp => resp.json()).then(res => setUser(res))
             .catch( error => console.log(error))
 
-        fetch(`https://api.sochem.org/api/user-extension?id=${props.user_id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/user-extension?id=${props.user_id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

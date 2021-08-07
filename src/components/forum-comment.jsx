@@ -12,7 +12,7 @@ function Comment(props){
     const [token, setToken] = useCookies(['mr-token']);
     const [userDetails, setUserDetails] = useState(null);
     useEffect(()=>{
-        fetch(`https://api.sochem.org/api/forum-comment?post_id=${props.postId}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/api/forum-comment?post_id=${props.postId}`, {
             method: 'GET',
             headers: {
               'Authorization': `Token ${token['mr-token']}`
