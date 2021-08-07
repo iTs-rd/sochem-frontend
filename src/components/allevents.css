@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+img{
+    border-radius: 0.5rem;
+}
+
+.box{
+    border-radius: 0.5rem;
+}
+
+.event-title-all{
+    font-size: 1.7rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    opacity: 0.8;
+}
+.img-events-cov{
+    height: 500px;
+    font-family: 'Lato', sans-serif;
+    width: auto;
+}
+.event-info-all{
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.8;
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+      z-index: 10;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .anevent-desc{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2rem;
+  }
+
+@media screen and (max-width: 600px) {
+    .event-title-all{
+        font-size: 25px;
+    }
+    .event-info-all{
+        font-size: 18px;
+    }
+    .event-body-an{
+        font-size: 15px;
+    }
+    .img-events-cov{
+        height: auto;
+        width: auto;
+    }
+  }
+
+  #anevent-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+  }

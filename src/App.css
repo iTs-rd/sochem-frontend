@@ -1,0 +1,98 @@
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');.App {
+    text-align: center;
+  }
+
+  .App-header {
+    background-color: #174270;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .jumbotorn{
+    height: 25rem;
+  }
+  .about-us{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 2rem;
+  }
+  .sochem {
+    margin-top: 100px;
+  }
+
+  .alternate-bgcolor:nth-of-type(even) {
+    background: #E6F0F2
+  }
+  .home-lower-text{
+    color: white;
+    height: 25rem;
+    text-align: center;
+  }
+
+  #home-forum-name{
+    font-family: 'Tajawal', sans-serif;
+  }
+
+  .top-image-home{
+    height: 30rem;
+    object-fit:cover;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+
+ a:hover{
+   color: #38393a;
+   text-decoration: none;
+ }
+  .cont-home-sochem{  
+    background-color: black;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    width: 100%;
+    margin-top: 4rem;
+    margin: 0;
+    margin-bottom: 3rem;
+    border-radius: 0;
+  }
+
+  .about-us-div{
+    margin-top: 5rem;
+    padding: 2rem;
+  }
+
+  .home-updates-forum{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .home-about-text{
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.8;
+    animation-duration: 1s;
+  }
+  .home-updates{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  #home-update-a{
+    color: #5A738E;
+  }
+  #home-update-a:hover{
+    color: #551A8B;
+  }
+
+  .home-forum-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 590;
+  }
+

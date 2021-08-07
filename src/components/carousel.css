@@ -1,0 +1,24 @@
+.carousel-home{
+    height: auto;
+    width: auto;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+  }
+  .carousel-img{
+    height: 30rem;
+    width: auto;
+  }
+
+  #carousel-main-div{
+    max-height: 50rem;
+    max-width: 55rem;
+    align-items: center;
+  }
+  @media (max-width:800px){
+      #carousel-main-div{
+        display: none;
+      }
+      .carousel-home{
+        display: none;
+      }
+  }

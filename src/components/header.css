@@ -1,0 +1,27 @@
+#sochem-home-heading{
+    font-family: 'Cabin', sans-serif;
+    font-size: calc(1vw + 4vh + 1vmin);
+    font-weight: bolder;
+    letter-spacing: 0.17rem;
+    color:  white;
+}
+.cont-home-sochem-jb{  
+    background-color:#174270;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+    padding: 5rem;
+}
+.home-header{
+    padding: 3rem;
+    margin-bottom: 6rem;
+    width: 100%;
+    height: auto;
+    background-image: url('./images/image.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+
+  
